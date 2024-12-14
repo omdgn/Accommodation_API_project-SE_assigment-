@@ -1,0 +1,30 @@
+{
+  "name": "accommodation_api_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node servers/index.js",
+    "dev": "nodemon servers/index.js",
+    "start:services": "concurrently \"node servers/authIndex.js\" \"node servers/hostIndex.js\" \"node servers/guestIndex.js\" \"node servers/adminIndex.js\" \"node servers/gateway.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/http-proxy": "^11.0.0",
+    "amqplib": "^0.10.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-http-proxy": "^2.1.1",
+    "fastify": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
