@@ -22,7 +22,7 @@ Auth Service: Handles user registration and login with role-based authentication
 Host Service: Manages property listings (add/delete).
 Guest Service: Manages bookings, payments, and reviews.
 Admin Service: Manages host listings and low-rated properties.
-RabbitMQ: Handles asynchronous payment and refund processing.
+RabbitMQ: Handles asynchronous payment and refund processing. (with Erlang)
 
 Challenges I Faced:
 Since I did not use Docker in adding RabbitMQ, it took me a long time to add external software, understand them and add them to my project. 
